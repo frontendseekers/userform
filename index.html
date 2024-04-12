@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Form validation using HTML
+        and JavaScript
+    </title>
+    <style>
+     div {
+            box-sizing: border-box;
+            width: 50%;
+            border: 100px solid rgb(0, 0, 0);
+            margin: 0 auto;
+        }
+
+        form {
+
+            width: 600px;
+        }
+      p {
+        font-size: 20px;
+        color: rgb(2, 0, 128);
+        font-weight: 600;
+      }
+      button {
+        background-color: rgb(209, 196, 255);
+        border-radius: 5pt;
+        border: 1px solid #cccccc;
+        padding: 20px;
+      }
+      .main {
+        border: 1px solid #ddd;
+        display: block;
+        text-align: center;
+        box-shadow:
+  3px 3px #6c11d3 inset,
+  -1em 0 0.4em rgb(195, 214, 27);
+      }
+    table{
+        border:1px solid #333;
+        margin:0 auto;
+        width:800px;
+    }
+    table td,th{
+        padding:10px ;
+        text-align: justify;
+        font-size: 10px;
+        line-height:25px ;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <h1 style="text-align: center;">
+        REGISTRATION FORM
+    </h1>
+    <form name="RegForm" onsubmit="event.preventDefault();">
+        <p>
+            Name:
+            <input type="text"  size="65" 
+                   name="Name" 
+                   placeholder="Name" id="name"/>
+        </p>
+        <br />
+        <p>
+            Address:
+            <input type="text" size="65" 
+                   name="Address"  id="address"
+                   work/>
+        </p>
+        <br />
+        <p>
+            E-mail Address:
+            <input type="email" size="65"  
+                   name="EMail" id="email" 
+                   />
+        </p>
+        <br />
+        <p>
+            Password:
+            <input type="password" size="65" 
+                   name="Password" id="password" />
+        </p>
+        <br />
+        <br />
+        <p>
+        <button type="submit" onclick="validateform()" >send</button>
+    </form>
+</div>
+<p>&nbsp;</p>
+<hr />
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Password</th>
+        </tr>
+        <tr>
+            <td id="nid">1</td>  <td id="eid">1</td>  <td id="aid">1</td>  <td id="pid">1</td>
+        </tr>
+</table>
+<script src="index.js" defer></script>
+</body>
+</html>
